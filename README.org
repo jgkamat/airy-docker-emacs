@@ -4,6 +4,16 @@ A super lightweight emacs in your docker
 
 The contemporary version of this package is [[https://github.com/Silex/docker-emacs][Silex/docker-emacs]].
 
+* Usage
+
+Get it at [[https://hub.docker.com/r/jgkamat/emacs/][jgkamat/emacs]]!
+
+#+BEGIN_SRC shell
+  docker run -ti jgkamat/emacs:25.2
+#+END_SRC
+
+I'll try to support as many versions of emacs as alpine will, submit a PR if you find anything lacking.
+
 * Why?
 
 I use Emacs for many things, not just for editing text! For example, I generate
@@ -31,7 +41,7 @@ jgkamat/airy-docker-emacs is:
 
 1. Built from alpine/alpine, so it's as small as possible
 2. Built using Emacs packages provided from alpine, so they are properly tested and maintained
-3. Builds in minutes, rather than hours
+3. Builds in seconds, rather than minutes
 4. An automated build
 5. Easily buildable on any machine.
 6. Dead simple (take a look at the dockerfiles).
@@ -46,3 +56,12 @@ jgkamat/airy-docker-emacs is NOT:
 |--------------------------------+-------|
 | Silex/docker-emacs:25          | 856MB |
 | jgkamat/airy-docker-emacs:25.2 | 125MB |
+
+* Build Time
+
+(I understand this is not a fair comparison, but I can't build these on my laptop to find out anyway)
+
+| Repo                                    | Time       |
+|-----------------------------------------+------------|
+| Silex/docker-emacs:25 (travis)          | 16 minutes |
+| jgkamat/airy-docker-emacs:25.2 (laptop) | 20s        |
