@@ -1,5 +1,7 @@
 * Featherweight Emacs in a Docker
 
+WARNING: This package is not stable yet. I might change the base or break this at any time ~:)~
+
 A super lightweight emacs in your docker
 
 The contemporary version of this package is [[https://github.com/Silex/docker-emacs][Silex/docker-emacs]].
@@ -59,7 +61,7 @@ jgkamat/airy-docker-emacs is NOT:
 | Repo                           | Size  |
 |--------------------------------+-------|
 | Silex/docker-emacs:25          | 856MB |
-| jgkamat/airy-docker-emacs:25.2 | 125MB |
+| jgkamat/airy-docker-emacs:25.2 | 160MB |
 
 * Build Time
 
