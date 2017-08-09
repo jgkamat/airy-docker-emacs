@@ -9,7 +9,7 @@ The contemporary version of this package is [[https://github.com/Silex/docker-em
 Get it at [[https://hub.docker.com/r/jgkamat/emacs/][jgkamat/emacs]]!
 
 #+BEGIN_SRC shell
-  docker run -ti jgkamat/emacs:25.2
+  docker run -ti jgkamat/emacs:25.2 emacs
 #+END_SRC
 
 I'll try to support as many versions of emacs as alpine will, submit a PR if you find anything lacking.
