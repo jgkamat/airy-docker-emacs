@@ -1,0 +1,48 @@
+* airy-docker-emacs
+
+A super lightweight emacs in your docker
+
+The contemporary version of this package is [[https://github.com/Silex/docker-emacs][Silex/docker-emacs]].
+
+* Why?
+
+I use Emacs for many things, not just for editing text! For example, I generate
+almost 100% of my written content in the fantastic [[http://orgmode.org/][org-mode]]. I need docker
+images of emacs to run these, for quick and reproducible builds.
+
+While Silex/docker-emacs is probably the best environment to get started on, it
+is lacking quite a bit for my use case.
+
+1. It's huge, weighing in at almost 900mb.
+2. It contains all of Emacs build dependencies, which are generally unneeded at
+   run time.
+3. It is self-compiled, which can lead to missing features (making sure
+   everything is properly compiled is a pain)
+4. Suffers from [[https://github.com/moby/moby/issues/22801]]
+5. It is not an automated build (leading to trust issues).
+
+While Silex/docker-emacs is useful if you want to test on specific emacs
+versions (since it compiles it's own version it can achieve this), this is not
+100% necessary for many usecases.
+
+* Overview
+
+jgkamat/airy-docker-emacs is:
+
+1. Built from alpine/alpine, so it's as small as possible
+2. Built using Emacs packages provided from alpine, so they are properly tested and maintained
+3. Builds in minutes, rather than hours
+4. An automated build
+5. Easily buildable on any machine.
+6. Dead simple (take a look at the dockerfiles).
+
+jgkamat/airy-docker-emacs is NOT:
+
+1. Able to provide specific Emacs versions older than 25.1 (the oldest version packaged by alpine).
+
+* Size Comparison
+
+| Repo                           | Size  |
+|--------------------------------+-------|
+| Silex/docker-emacs:25          | 856MB |
+| jgkamat/airy-docker-emacs:25.2 | 125MB |
