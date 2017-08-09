@@ -1,4 +1,4 @@
-* airy-docker-emacs
+* Featherweight Emacs in a Docker
 
 A super lightweight emacs in your docker
 
