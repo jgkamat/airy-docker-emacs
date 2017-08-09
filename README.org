@@ -14,6 +14,10 @@ Get it at [[https://hub.docker.com/r/jgkamat/emacs/][jgkamat/emacs]]!
 
 I'll try to support as many versions of emacs as alpine will, submit a PR if you find anything lacking.
 
+** Available Tags
+- ~jgkamat/emacs:25.1~
+- ~jgkamat/emacs:25.2~
+
 * Why?
 
 I use Emacs for many things, not just for editing text! For example, I generate
