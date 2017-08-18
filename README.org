@@ -52,6 +52,7 @@ jgkamat/airy-docker-emacs is:
 4. An automated build
 5. Easily buildable on any machine.
 6. Dead simple (take a look at the dockerfiles).
+7. Includes cask versions (for CI) (append ~-cask~ to tag)
 
 jgkamat/airy-docker-emacs is NOT:
 
