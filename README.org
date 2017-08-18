@@ -64,7 +64,7 @@ jgkamat/airy-docker-emacs is NOT:
 | Repo                           | Size  |
 |--------------------------------+-------|
 | Silex/docker-emacs:25          | 856MB |
-| jgkamat/airy-docker-emacs:25.2 | 160MB |
+| jgkamat/airy-docker-emacs:25.2 | 125MB |
 
 * Build Time
 
