@@ -58,6 +58,8 @@ jgkamat/airy-docker-emacs is NOT:
 
 1. Able to provide specific Emacs versions older than 25.1 (the oldest version
    packaged by alpine).
+2. Able to provide Emacs versions not packaged by Alpine yet (will always
+   include dev and snapshot releases).
 
 * Size Comparison
 
