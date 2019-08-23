@@ -1,7 +1,5 @@
 * Featherweight Emacs in a Docker
 
-WARNING: This package is not stable yet. I might change the base or break this at any time ~:)~
-
 A super lightweight emacs in your docker
 
 The contemporary version of this package is [[https://github.com/Silex/docker-emacs][Silex/docker-emacs]].
@@ -19,7 +17,8 @@ I'll try to support as many versions of emacs as alpine will, submit a PR if you
 ** Available Tags
 - ~jgkamat/emacs:25.1~
 - ~jgkamat/emacs:25.2~
-# - ~jgkamat/emacs:26.1~
+- ~jgkamat/emacs:26.1~
+- ~jgkamat/emacs:26.2~
 
 * Why?
 
@@ -64,12 +63,15 @@ jgkamat/airy-docker-emacs is NOT:
 
 * Size Comparison
 
-| Repo                           | Size  |
-|--------------------------------+-------|
-| Silex/docker-emacs:25          | 856MB |
-| jgkamat/airy-docker-emacs:25.2 | 125MB |
+| Repo                               | Size   |
+|------------------------------------+--------|
+| silex/docker-emacs:25.2            | 455GB  |
+| silex/docker-emacs:25.2-dev        | 1.37GB |
+| silex/docker-emacs:25.2-alpine     | 223MB  |
+| silex/docker-emacs:25.2-alpine-dev | 1.16GB |
+| jgkamat/airy-docker-emacs:25.2     | 125MB  |
 
-* Build Time
+* Cacheless Build Time
 
 (I understand this is not a fair comparison, but I can't build these on my
 laptop to find out anyway)
@@ -77,14 +79,14 @@ laptop to find out anyway)
 | Repo                                    | Time       |
 |-----------------------------------------+------------|
 | Silex/docker-emacs:25 (travis)          | 16 minutes |
-| jgkamat/airy-docker-emacs:25.2 (laptop) | 20s        |
+| jgkamat/airy-docker-emacs:25.2 (laptop) | 5s         |
 
 * Personal Dotfile Build Time
 
 Results are from emacs byte compilation of my dotfiles and their dependencies in
 circleci
 
-| Repo                           | Build Time | Source    |
-|--------------------------------+------------+-----------|
-| Silex/docker-emacs:25          |       1:20 | [[https://circleci.com/gh/jgkamat/dotfiles/262][build 262]] |
-| jgkamat/airy-docker-emacs:25.2 |       0:56 | [[https://circleci.com/gh/jgkamat/dotfiles/304][build 304]] |
+| Repo                             | Build Time | Source    |
+|----------------------------------+------------+-----------|
+| Silex/docker-emacs:25 (outdated) |       1:20 | [[https://circleci.com/gh/jgkamat/dotfiles/262][build 262]] |
+| jgkamat/airy-docker-emacs:25.2   |       0:56 | [[https://circleci.com/gh/jgkamat/dotfiles/304][build 304]] |
