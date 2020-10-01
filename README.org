@@ -22,6 +22,7 @@ In addition to these tags, all tags have a ~-cask~ variant that contains cask pr
 - ~jgkamat/emacs:25.2~
 - ~jgkamat/emacs:26.1~
 - ~jgkamat/emacs:26.2~
+- ~jgkamat/emacs:26.3~
 
 * Why?
 
