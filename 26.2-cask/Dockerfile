@@ -9,5 +9,5 @@ run apk update && apk add \
 	bash \
 	git
 
-run curl -fsSL https://raw.githubusercontent.com/cask/cask/master/go | python
+run git clone https://github.com/cask/cask ~/.cask
 env PATH="/root/.cask/bin:${PATH}"
