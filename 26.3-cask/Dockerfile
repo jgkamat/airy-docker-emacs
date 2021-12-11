@@ -3,7 +3,7 @@ from alpine:3.12
 run apk update && apk add \
 	git \
 	curl \
-	python \
+	python3 \
 	emacs \
 	openssh \
 	bash \
